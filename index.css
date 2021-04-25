@@ -1,0 +1,593 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: Rubik Regular;
+
+    --accent1: #F53838;
+    --heading: #0B132A;
+    --text: #4F5665;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    line-height: 3rem;
+    color: var(--text);
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Rubik Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Regular'), url('assets/fonts/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Light'), url('assets/fonts/Rubik-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Medium'), url('assets/fonts/Rubik-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik Bold'), url('assets/fonts/Rubik-Bold.woff') format('woff');
+}
+
+/* header */
+
+.main-header {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 5rem;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.btn {
+    font-family: Rubik Medium;
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-accent-light {
+    background-color: transparent;
+    color: var(--accent1);
+    border: 0.1rem solid var(--accent1);
+    border-radius: 4rem;
+}
+
+/* header end */
+
+
+/* hero */
+
+.row {
+    display: grid;
+    gap: 0 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.hero {
+    margin-top: 5rem;
+}
+
+.hero-text-wrapper {
+    grid-column: span 2;
+}
+
+.hero-image {
+    grid-column: span 2;
+}
+
+.hero-heading {
+    font-size: 5rem;
+    line-height: 7rem;
+    color: var(--heading);
+}
+
+.hero-heading span {
+    font-family: Rubik Bold;
+    color: var(--heading);
+    font-size: 5rem;
+}
+
+.hero-text {
+    margin-top: 1.6rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+    color: var(--text);
+    font-size: 1.6rem;
+}
+
+.hero-text span {
+    color: var(--text);
+    font-size: 1.6rem;
+    font-family: Rubik Bold;
+}
+
+.btn-accent {
+    font-family: Rubik Bold;
+    font-size: 1.6rem;
+    background-color: var(--accent1);
+    color: white;
+    padding: 2rem 10rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 50px -10px rgba(245, 56, 56, 35);
+    cursor: pointer;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20rem 10rem;
+    padding: 2rem 0;
+    box-shadow: 0px 10px 30px -30px rgba(13, 16, 37, 5);
+}
+
+.hero-info-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.hero-info-item:not(:last-child) {
+    border-right: 2px solid #EEEFF2;
+}
+
+.info-details {
+    margin-left: 2rem;
+}
+
+.info-details-heading {
+    font-family: Rubik Bold;
+    font-size: 2.5rem;
+    color: var(--heading);
+    line-height: 3rem;
+}
+
+.info-details-text {
+    font-size: 2rem;
+    color: var(--text);
+    line-height: 3rem;
+}
+
+/* hero end */
+
+
+/* features */
+
+.feature-image {
+    grid-column: span 2;
+}
+
+.feature-text-wrapper {
+    grid-column: span 2;
+}
+
+.feature-heading {
+    color: var(--heading);
+    font-family: Rubik Medium;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+
+.feature-text {
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-top: 1.6rem;
+}
+
+.feature-list-item {
+    display: flex;
+    align-items: center;
+    font-family: Rubik Regular;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    margin-top: 1.4rem;
+}
+
+/* feature end */
+
+
+/* plans */
+
+.plans {
+    margin-top: 15rem;
+    background-image: linear-gradient(rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+}
+
+.plans-heading {
+    font-family: Rubik Medium;
+    color: var(--heading);
+    font-size: 3.5rem;
+    line-height: 5rem;
+    grid-column: span 4;
+    margin: 15rem auto 2rem auto;
+}
+
+.plans-text {
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 3rem;
+    grid-column: span 2/4;
+    text-align: center;
+    margin: 0 auto 5rem auto;
+}
+
+.plans-wrapper {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    padding: 0 15rem;
+}
+
+.plan {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #DDDDDD;
+    border-radius: 1rem;
+    padding: 8rem 2rem;
+}
+
+.plan-heading {
+    margin-top: 2rem;
+    font-family: Rubik Medium;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.plan-details-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.plan-detail {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+.plan-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.price {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: Rubik Medium;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.price span {
+    font-family: Rubik Medium;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #4F5665;
+}
+
+.btn-select-light {
+    font-family: Rubik Bold;
+    font-size: 1.6rem;
+    color: var(--accent1);
+    border: 2px solid var(--accent1);
+    border-radius: 5rem;
+    padding: 1rem 6rem;
+    background-color: transparent;
+}
+
+.btn-select-accent {
+    font-family: Rubik Bold;
+    font-size: 1.6rem;
+    color: white;
+    border: 2px solid var(--accent1);
+    border-radius: 5rem;
+    padding: 1rem 6rem;
+    background-color: var(--accent1);
+    box-shadow: 0px 10px 50px -10px rgba(245, 56, 56, 35);
+}
+
+.global-heading {
+    grid-column: span 4;
+    margin: 15rem auto 0 auto;
+    font-family: Rubik Medium;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    color: var(--heading);
+}
+
+.global-text {
+    grid-column: span 4;
+    margin: 2rem auto 15rem auto;
+    font-family: Rubik Regular;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: var(--text)
+}
+
+.global-text span {
+    grid-column: span 4;
+    margin: 2rem auto 15rem auto;
+    font-family: Rubik Medium;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.global-image {
+    grid-column: span 4;
+    margin: auto;
+}
+
+.sponsor-image {
+    grid-column: span 4;
+    margin: auto;
+}
+
+/* plans end */
+
+
+/* testimonials */
+
+.testimonials {
+    margin-top: 15rem;
+}
+
+.testimonial-heading {
+    grid-column: span 4;
+    margin: auto;
+    color: var(--heading);
+    font-size: 3.5rem;
+    font-family: Rubik Medium;
+    line-height: 5rem;
+}
+
+.testimonial-text {
+    grid-column: span 4;
+    margin: 2rem auto 5rem auto;
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.testimonial-wrapper {
+    display: grid;
+    gap: 5rem;
+    transform: translateX(21rem);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    grid-column: span 4;
+}
+
+.testimonial-item {
+    border: 2px solid #DDDDDD;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    min-height: 100%;
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person-info-wrapper {
+    margin-left: 2rem;
+}
+
+.person-name {
+    font-family: Rubik Medium;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--heading);
+}
+
+.person-location {
+    color: var(--text);
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+.person-rating-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    color: var(--heading);
+    line-height: 3rem;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+}
+
+.testimonial-person-text {
+    color: var(--heading);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.selected {
+    border: 2px solid var(--accent1);
+}
+
+.page-select-wrapper {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-badge {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 4;
+    padding: 5rem;
+    background-color: white;
+    border: 2px solid #DDDDDD;
+    border-radius: 1rem;
+    transform: translateY(50%)
+}
+
+.subscribe-heading {
+    font-family: Rubik Medium;
+    color: var(--heading);
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+}
+
+.subscribe-text {
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+/* testimonials end */
+
+
+/* footer */
+
+footer {
+    background-color: #F8F8F8;
+    padding: 15rem 0 5rem 0;
+}
+
+.footer {
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.company-info {
+    grid-column: span 2;
+}
+
+.footer-text {
+    color: var(--text);
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.footer-text span {
+    color: var(--text);
+    font-size: 1.6rem;
+    font-family: Rubik Medium;
+    line-height: 3rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.socialmedia-wrapper {
+    display: flex;
+}
+
+.socialmedia-wrapper > img {
+    cursor: pointer;
+}
+
+.copyright {
+    color: #AFB5C0;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+.footer-heading {
+    color: var(--heading);
+    line-height: 3rem;
+    font-family: Rubik Medium;
+    font-size: 1.8rem;
+}
+
+.footer-list-item {
+    color: var(--text);
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+.product-footer {
+    grid-column: 3;
+}
